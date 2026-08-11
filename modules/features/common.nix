@@ -1,8 +1,8 @@
-{
+{ den, ... }: {
   den.aspects.common = {
-    includes = with den; [
-      aspects.niri
-      aspects.dev
+    includes = with den.aspects; [
+      niri
+      dev
     ];
   };
 }

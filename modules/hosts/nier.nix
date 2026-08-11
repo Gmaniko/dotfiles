@@ -3,7 +3,7 @@
     # NixOS config
     nixos = { pkgs, ... }: {
       # Hardware config
-      imports = [ ./nier-hardware.nix ];
+      imports = [ ./_nier-hardware ];
 
       environment.systemPackages = with pkgs; [
         hello

@@ -3,7 +3,7 @@
     # NixOS config
     nixos = { pkgs, ... }: {
       # Hardware config
-      imports = [ ./weiss-hardware.nix ];
+      imports = [ ./_weiss-hardware ];
 
       environment.systemPackages = with pkgs; [
         hello

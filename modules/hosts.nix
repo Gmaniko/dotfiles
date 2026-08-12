@@ -7,7 +7,7 @@
   den.hosts.x86_64-linux.weiss.users.gmaniko = { };
 
   # define an standalone home-manager for tux
-  # den.homes.x86_64-linux.tux = { };
+  den.homes.x86_64-linux.gmaniko = { };
 
   # be sure to add nix-darwin input for this:
   # den.hosts.aarch64-darwin.apple.users.alice = { };

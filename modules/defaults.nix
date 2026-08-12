@@ -2,14 +2,21 @@
 {
   den.default.homeManager.home.stateVersion = "26.05";
 
+  den.default.includes = [ den.batteries.hostname ];
+
   # enable hm by default
   den.schema.user.classes = lib.mkDefault [ "homeManager" ];
 
   den.default.nixos = { pkgs, ... }: {
-    stateVersion = "26.05";
-    i18n.default.defaultLocale = "en_DK.UTF-8";
+    system.stateVersion = "26.05";
+    i18n.defaultLocale = "en_DK.UTF-8";
     console.useXkbConfig = true;
     services.xserver.xkb.layout = "dk";
+
+    environment.systemPackages = with pkgs; [
+      vim
+      git
+    ];
     
     # Time zone
     time.timeZone = "Europe/Copenhagen";
@@ -21,7 +28,7 @@
     boot = {
       loader = {
         systemd-boot.enable = true;
-        canTouchEfiVariables = true;
+        efi.canTouchEfiVariables = true;
       };
       kernelPackages = pkgs.linuxPackages_latest;
     };

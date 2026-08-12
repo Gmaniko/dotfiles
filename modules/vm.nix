@@ -3,10 +3,6 @@
 # instead of having to reboot each time.
 { inputs, den, ... }:
 {
-
-  # USER TODO: remove this tty-autologin used for the VM
-  den.aspects.nier.includes = [ (den.batteries.tty-autologin "gmaniko") ];
-
   perSystem =
     { pkgs, ... }:
     {

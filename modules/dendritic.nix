@@ -1,5 +1,8 @@
-{ inputs, ... }:
+{ den, inputs, ... }:
 {
+
+  _module.args.__findFile = den.lib.__findFile;
+
   imports = [
     (inputs.flake-file.flakeModules.dendritic or { })
     (inputs.den.flakeModules.dendritic or { })

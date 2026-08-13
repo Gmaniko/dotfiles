@@ -27,8 +27,10 @@ in
     includes = [
       <desktop/niri>
       <net/ssh>
+      <hardware/amdgpu>
       
     ];
+
   };
 
 }

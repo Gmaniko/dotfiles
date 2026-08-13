@@ -26,6 +26,7 @@ in
   den.aspects.${hostname} = {
     includes = [
       <desktop/niri>
+      <net/ssh>
       
     ];
   };

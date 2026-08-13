@@ -1,5 +1,5 @@
-{ den, ... }:
+{ __findFile, ... }:
 {
   den.default.nixos.networking.networkmanager.enable = true;
-  den.default.includes = [ den.batteries.hostname ];
+  den.default.includes = [ <den/hostname> ];
 }

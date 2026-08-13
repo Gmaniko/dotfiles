@@ -15,5 +15,17 @@
       <image/imv>
       <music/rmpc>
     ];
+
+    nixos.services.greetd = {
+      enable = true;
+      settigns = rec {
+        initial_session = {
+          command = "niri-session";
+          user = "gmaniko";
+        };
+        default_session = initial_session;
+      };
+    };
+
   };
 }

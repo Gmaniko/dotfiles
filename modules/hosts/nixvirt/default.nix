@@ -36,6 +36,8 @@ in
       <theme/catppuccin>
       <net/ssh>
       <hardware/amdgpu>
+
+      (<den/tty-autologin> "gmaniko") # autologin
       
     ];
 

@@ -1,5 +1,5 @@
 {
-  den.ful.wm.niri.homeManager = { pkgs, ... }: {
+  den.ful.wm.niri.homeManager = { pkgs, lib, ... }: {
     programs.niri.settings.binds = {
       # Spawning programs
       "Alt+Space".action.spawn = [
@@ -8,8 +8,8 @@
         "panel-toggle"
         "launcher"
       ];
-      "Mod+W".action.spawn = "${pkgs.zen-beta}/bin/zen-beta";
-      "Mod+Return".action.spawn = "${pkgs.kitty}/bin/kitty";
+      "Mod+W".action.spawn = "zen-beta";
+      "Mod+Return".action.spawn = "kitty";
 
       # Navigation
       "Mod+H".action.focus-column-left = [ ];

@@ -18,7 +18,7 @@
 
     nixos.services.greetd = {
       enable = true;
-      settigns = rec {
+      settings = rec {
         initial_session = {
           command = "niri-session";
           user = "gmaniko";

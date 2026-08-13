@@ -5,7 +5,7 @@
 { inputs, lib, ... }:
 {
   flake-file.inputs = {
-    stylix.url = "github:danth/stylix/release-26.05";
+    stylix.url = "github:nix-community/stylix";
     stylix.inputs.nixpkgs.follows = "nixpkgs";
   };
 

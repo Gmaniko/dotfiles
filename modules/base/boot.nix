@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   den.default.nixos.boot = {
     loader = {

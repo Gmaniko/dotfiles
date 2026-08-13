@@ -8,7 +8,7 @@
       <wm/niri>
       <shell/noctalia>
       <audio/pipewire>
-      <browser/firefox>
+      <browser/zen>
       <terminal/kitty>
       <email/thunderbird>
       <video/mpv>

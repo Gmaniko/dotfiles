@@ -27,7 +27,7 @@ in
     includes = [
       <desktop/niri>
       
-    ]
+    ];
   };
 
 }

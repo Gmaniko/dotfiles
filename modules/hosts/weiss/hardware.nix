@@ -1,3 +1,3 @@
-# {
-#   den.aspects.weiss.nixos = ...
-# }
+{
+  # den.aspects.weiss.nixos = ...
+}

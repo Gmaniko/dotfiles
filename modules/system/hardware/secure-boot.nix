@@ -1,1 +1,3 @@
-#lanzaboote
+{
+  # implement lanzaboote
+}

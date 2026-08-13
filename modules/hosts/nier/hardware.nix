@@ -1,3 +1,3 @@
-# {
-#   den.aspects.nier.nixos = ...
-# }
+{
+  # den.aspects.nier.nixos = ...
+}

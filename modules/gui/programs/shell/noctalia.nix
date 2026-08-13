@@ -10,6 +10,6 @@
 
     programs.noctalia = {
       enable = true;
-    }
+    };
   };
 }

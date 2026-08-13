@@ -9,7 +9,7 @@
     host.class.theme = {
       scheme = ./scheme.yaml;
       polarity = "dark";
-      # wallpaper = ./wallpaper.png;
+      wallpaper = ./wallpaper.png;
     };
   };
 }

@@ -8,8 +8,8 @@
         "panel-toggle"
         "launcher"
       ];
-      "Mod+W".action.spawn = "zen-beta";
-      "Mod+Return".action.spawn = "kitty";
+      "Mod+W".action.spawn = lib.getExe pkgs.zen-beta;
+      "Mod+Return".action.spawn = lib.getExe pkgs.kitty;
 
       # Navigation
       "Mod+H".action.focus-column-left = [ ];

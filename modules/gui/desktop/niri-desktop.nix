@@ -16,16 +16,17 @@
       <music/rmpc>
     ];
 
-    nixos.services.greetd = {
-      enable = true;
-      settings = rec {
-        initial_session = {
-          command = "niri-session";
-          user = "gmaniko";
-        };
-        default_session = initial_session;
-      };
-    };
+    # autostart niri
+    # nixos.services.greetd = {
+    #   enable = true;
+    #   settings = rec {
+    #     initial_session = {
+    #       command = "niri-session";
+    #       user = "gmaniko";
+    #     };
+    #     default_session = initial_session;
+    #   };
+    # };
 
   };
 }

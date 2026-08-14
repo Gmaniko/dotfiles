@@ -16,7 +16,7 @@
       programs.niri = {
         enable = true;
         settings = {
-          screenshot-path = "~/Pictures/Screenshots/%s.png";
+          # screenshot-path = "~/Pictures/Screenshots/%s.png";
           hotkey-overlay.skip-at-startup = true;
           prefer-no-csd = true;
           xwayland-satellite = {

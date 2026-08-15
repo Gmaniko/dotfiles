@@ -22,7 +22,7 @@ let
 in 
 {
   den.hosts.x86_64-linux.${hostname} = {
-    users.gmaniko = { };
+    users.gmaniko.classes = [ "homeManager" ];
     theme = {
       scheme = ../../theme/catppuccin/scheme.yaml;
       polarity = "dark";

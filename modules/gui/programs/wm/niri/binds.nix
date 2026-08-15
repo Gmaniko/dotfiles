@@ -8,7 +8,7 @@
         "panel-toggle"
         "launcher"
       ];
-      "Mod+W".action.spawn = lib.getExe pkgs.zen-beta;
+      "Mod+W".action.spawn = "zen-beta";
       "Mod+Return".action.spawn = lib.getExe pkgs.kitty;
 
       # Navigation

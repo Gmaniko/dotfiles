@@ -5,7 +5,7 @@
       mode = {
         width = 1920;
         height = 1080;
-        refresh = 60;
+        # refresh = 60;
       };
     };
   };

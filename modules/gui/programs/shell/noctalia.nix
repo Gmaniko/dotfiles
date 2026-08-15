@@ -6,9 +6,15 @@
   ...
 }:
 {
-  flake-file.inputs = {
-    noctalia.url = "github:noctalia-dev/noctalia";
-    noctalia.inputs.nixpkgs.follows = "nixpkgs";
+  flake-file = {
+    inputs = {
+      noctalia.url = "github:noctalia-dev/noctalia/cachix";
+      # noctalia.inputs.nixpkgs.follows = "nixpkgs";
+    };
+    nixConfig = {
+      extra-substituters = [ "https://noctalia.cachix.org" ];
+      extra-trusted-public-keys = [ "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4=" ];
+    };
   };
 
   den.ful.shell.noctalia.homeManager = { config, pkgs, ... }: {
@@ -76,7 +82,7 @@
           };
         };
 
-        location.address = "Amsterdam, Netherlands";
+        location.address = "Taastrup, Denmark";
 
         lockscreen_widgets = {
           enabled = false;
@@ -87,12 +93,12 @@
             major_interval = 4;
             visible = true;
           };
-          widget."lockscreen-login-box@HDMI-A-3" = {
+          widget."lockscreen-login-box@Virtual-1" = {
             box_height = 70.0;
             box_width = 400.0;
             cx = 1920.0;
             cy = 2041.0;
-            output = "HDMI-A-3";
+            output = "Virtual-1";
             rotation = 0.0;
             type = "login_box";
             settings = {
@@ -125,7 +131,7 @@
         theme = {
           builtin = "Catppuccin";
           community_palette = "Oxocarbon";
-          source = "builtin";
+          # source = "builtin";
           wallpaper_scheme = "m3-content";
         };
         wallpaper = {

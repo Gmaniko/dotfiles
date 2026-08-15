@@ -34,6 +34,7 @@ in
     includes = [
       <desktop/niri>
       <theme/catppuccin>
+      <editor/zed>
       <net/ssh>
       <hardware/amdgpu>
 

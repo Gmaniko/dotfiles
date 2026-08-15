@@ -3,8 +3,8 @@
     "Virtual-1" = {
       scale = 1;
       mode = {
-        width = 1920;
-        height = 1080;
+        width = 2560;
+        height = 1440;
         # refresh = 60;
       };
     };

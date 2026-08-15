@@ -1,5 +1,5 @@
 {
-  den.ful.editor.zed.programs.zed-editor = {
+  den.ful.editor.zed.homeManager.programs.zed-editor = {
     enable = true;
     extensions = [ "nix" "python" "typst" ];
     userSettings = {

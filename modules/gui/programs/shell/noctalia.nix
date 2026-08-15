@@ -61,26 +61,26 @@
           widget = { };
         };
 
-        idle = {
-          behavior_order = [
-            "idle-behavior"
-            "idle-behavior-3"
-          ];
+        # idle = {
+        #   behavior_order = [
+        #     "idle-behavior"
+        #     "idle-behavior-3"
+        #   ];
 
-          behavior = {
-            idle-behavior = {
-              action = "screen_off";
-              enabled = true;
-              timeout = 300.0;
-            };
+        #   behavior = {
+        #     idle-behavior = {
+        #       action = "screen_off";
+        #       enabled = true;
+        #       timeout = 300.0;
+        #     };
 
-            idle-behavior-3 = {
-              action = "lock_and_suspend";
-              enabled = true;
-              timeout = 360.0;
-            };
-          };
-        };
+        #     idle-behavior-3 = {
+        #       action = "lock_and_suspend";
+        #       enabled = true;
+        #       timeout = 360.0;
+        #     };
+        #   };
+        # };
 
         location.address = "Taastrup, Denmark";
 
@@ -124,7 +124,7 @@
           ui_scale = 1.5;
           panel.open_near_click_control_center = true;
           screenshot = {
-            directory = "/home/rafael/Pictures/Screenshots";
+            directory = "/home/gmaniko/Pictures/Screenshots";
             filename_pattern = "%s.png";
           };
         };
